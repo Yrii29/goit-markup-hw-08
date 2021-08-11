@@ -1,0 +1,23 @@
+.header {
+  border-bottom: 1px solid var(--border-bottom-color);
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__conteiner {
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  padding: 25px 15px;
+}
+
+.header__display--portfolio {
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  padding: 25px 15px;
+}
