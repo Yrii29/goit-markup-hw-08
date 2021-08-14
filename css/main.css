@@ -379,9 +379,16 @@ button:focus {
 }
 
 .comando__conteiner {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .comando__conteiner {
+    max-width: 480px;
+    padding: 0 15px;
+  }
 }
 
 .comando__title {
