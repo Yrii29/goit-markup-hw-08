@@ -23,6 +23,12 @@
   padding: 0px;
 }
 
+@media (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+}
+
 .nav__items:not(:last-child) {
   margin-right: 50px;
 }
@@ -60,6 +66,12 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .adrec__list {
+    display: none;
+  }
 }
 
 .adrec__items:not(:last-child) {
