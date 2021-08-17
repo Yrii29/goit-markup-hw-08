@@ -1,8 +1,17 @@
 .menu {
   display: flex;
-  justify-content: end;
-  margin-left: 60px;
+  margin-right: 18px;
+  border: none;
+  position: absolute;
+  right: 0;
+  color: var(--main-br-color);
+  background: none;
 }
+
+.menu__logo-svg {
+  fill: currentColor;
+}
+
 @media (min-width: 768px) {
   .menu {
     display: none;
