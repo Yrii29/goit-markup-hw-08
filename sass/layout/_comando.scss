@@ -76,3 +76,28 @@
 .social__logo-svg-comando {
   fill: currentColor;
 }
+
+@media (max-width: 478px) {
+  .comando {
+    padding: 60px 0;
+  }
+
+  .comando__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  .comando__list {
+    display: block;
+  }
+
+  .comando__items:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .social__list {
+    justify-content: center;
+    padding-top: 0;
+  }
+}

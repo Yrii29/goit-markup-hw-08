@@ -471,6 +471,23 @@ button:focus {
   fill: currentColor;
 }
 
+@media (max-width: 478px) {
+  .customer__list {
+    flex-wrap: wrap;
+  }
+  .customer__items:not(:last-child) {
+    margin-right: 0;
+  }
+  .customer__items {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-left: -15px;
+    margin-bottom: -15px;
+  }
+  .customer__link {
+    width: 210px;
+  }
+}
+
 .comando {
   background-color: var(--sector-bg-color);
   margin: 0 auto;
@@ -546,6 +563,27 @@ button:focus {
 
 .social__logo-svg-comando {
   fill: currentColor;
+}
+
+@media (max-width: 478px) {
+  .comando {
+    padding: 60px 0;
+  }
+  .comando__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  .comando__list {
+    display: block;
+  }
+  .comando__items:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .social__list {
+    justify-content: center;
+    padding-top: 0;
+  }
 }
 
 .header {
@@ -735,7 +773,6 @@ button:focus {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--sector-bg-color);
@@ -762,12 +799,31 @@ button:focus {
 }
 
 .specific__description {
-  width: 270px;
   text-decoration: none;
   color: var(--adrec-el-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media (max-width: 478px) {
+  .specific__list {
+    display: block;
+    margin-bottom: 60px;
+  }
+  .specific__items:not(:last-child) {
+    margin-right: 0;
+  }
+  .specific__thumb {
+    width: 100%;
+  }
+  .specific__title {
+    text-align: center;
+  }
+  .specific__description {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .work {
@@ -818,6 +874,12 @@ button:focus {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+
+@media (max-width: 478px) {
+  .work {
+    display: none;
+  }
 }
 
 .footer {

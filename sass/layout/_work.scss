@@ -50,3 +50,9 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
+
+@media (max-width: 478px) {
+  .work {
+    display: none;
+  }
+}

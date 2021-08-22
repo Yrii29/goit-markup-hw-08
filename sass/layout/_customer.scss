@@ -52,3 +52,23 @@
   align-items: center;
   fill: currentColor;
 }
+
+@media (max-width: 478px) {
+  .customer__list {
+    flex-wrap: wrap;
+  }
+
+  .customer__items:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .customer__items {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-left: -15px;
+    margin-bottom: -15px;
+  }
+
+  .customer__link {
+    width: 210px;
+  }
+}

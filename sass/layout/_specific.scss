@@ -23,7 +23,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--sector-bg-color);
@@ -50,10 +49,33 @@
 }
 
 .specific__description {
-  width: 270px;
   text-decoration: none;
   color: var(--adrec-el-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media (max-width: 478px) {
+  .specific__list {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .specific__items:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .specific__thumb {
+    width: 100%;
+  }
+
+  .specific__title {
+    text-align: center;
+  }
+
+  .specific__description {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
