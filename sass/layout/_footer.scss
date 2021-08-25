@@ -9,6 +9,10 @@
   margin: 0 auto;
   padding: 0 15px;
   width: 1200px;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
 }
 
 .footer-dark {

@@ -4,14 +4,20 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  height: 60px;
+
+  @media screen and (min-width: 767px) {
+    height: 80px;
+  }
 }
 
 .header__conteiner {
-  margin: 0px auto;
   display: flex;
   align-items: center;
-  width: 1200px;
-  padding: 25px 15px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .header__display--portfolio {

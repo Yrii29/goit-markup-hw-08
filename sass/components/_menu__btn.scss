@@ -1,11 +1,9 @@
 .menu {
   display: flex;
-  margin-right: 18px;
+  padding: 0;
   border: none;
-  position: absolute;
-  right: 0;
   color: var(--main-br-color);
-  background: none;
+  background-color: transparent;
 }
 
 .menu__logo-svg {
