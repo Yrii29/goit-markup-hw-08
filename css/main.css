@@ -140,6 +140,13 @@ label {
   letter-spacing: 0.01em;
 }
 
+@media screen and (max-width: 480px) {
+  label {
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+}
+
 .window {
   width: 528px;
   position: absolute;
@@ -497,16 +504,14 @@ button:focus {
   .customer__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-bottom: -15px;
+    margin: -15px;
   }
   .customer__items:not(:last-child) {
     margin-right: 0;
   }
   .customer__items {
-    flex-basis: calc(100% / 2 - 15px);
-    margin-left: 15px;
-    margin-bottom: 15px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
   }
   .customer__link {
     width: 210px;
@@ -1049,26 +1054,28 @@ button:focus {
 }
 
 .footer__conteiner {
-  display: flex;
   align-items: baseline;
   margin: 0 auto;
   padding: 0 15px;
-  width: 1200px;
+  width: 100%;
 }
 
-@media screen and (max-width: 480px) {
-  .footer__conteiner {
-    display: block;
+@media screen and (min-width: 768px) {
+  .footer__box {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
-.footer-dark {
-  margin: 0;
+@media screen and (max-width: 480px) {
+  .footer-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .web__footer {
-  display: block;
-  margin-bottom: 30px;
   text-decoration: none;
   color: var(--title-color);
   font-family: Raleway;
@@ -1077,8 +1084,16 @@ button:focus {
   font-size: 26px;
 }
 
-.footer__list {
-  padding-right: 0;
+@media screen and (min-width: 768px) {
+  .web__footer {
+    margin-left: 115px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__list {
+    margin-left: 55px;
+  }
 }
 
 .footer__items:not(:last-child) {
@@ -1086,14 +1101,7 @@ button:focus {
   margin-bottom: 10px;
 }
 
-.social__footer {
-  margin-left: 70px;
-  margin-right: 90px;
-}
-
 .social__title--footer {
-  margin: 0;
-  margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -1102,11 +1110,37 @@ button:focus {
   color: var(--title-color);
 }
 
+@media screen and (max-width: 480px) {
+  .social__title--footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social__title--footer {
+    margin-right: 115px;
+  }
+}
+
 .social__list--footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .social__list--footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social__list--footer {
+    display: flex;
+  }
 }
 
 .social__item--footer:not(:last-child) {
@@ -1134,6 +1168,18 @@ button:focus {
   margin: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .adres-go {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adres-go {
+    margin: 20px;
+  }
+}
+
 .adres {
   margin: 10px auto 10px 0;
   text-decoration: none;
@@ -1145,15 +1191,40 @@ button:focus {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 480px) {
+  .adres__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adres__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+  }
+}
+
 .substrides {
+  align-items: center;
   color: var(--title-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-left: 93px;
+}
+
+@media screen and (max-width: 480px) {
+  .substrides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .substrides__title--footer {
@@ -1166,9 +1237,23 @@ button:focus {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .substrides__title--footer {
+    margin-top: 60px;
+  }
+}
+
 .substrides__box--footer {
   display: inline-flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .substrides__box--footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .input-email {
