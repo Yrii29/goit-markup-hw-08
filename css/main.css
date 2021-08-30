@@ -1407,6 +1407,12 @@ button:focus {
   margin: 0 auto 94px auto;
 }
 
+@media screen and (max-width: 480px) {
+  .function__list-portfolio {
+    display: block;
+  }
+}
+
 .function__items-portfolio {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 27px;

@@ -11,6 +11,10 @@
   margin-left: -30px;
   margin-bottom: -30px;
   margin: 0 auto 94px auto;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
 }
 
 .function__items-portfolio {
