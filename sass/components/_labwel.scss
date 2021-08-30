@@ -4,7 +4,6 @@ label {
   display: flex;
   justify-content: inherit;
   color: var(--adrec-el-color);
-  margin-right: 440px;
   margin-bottom: 5px;
   font-size: 12px;
   line-height: 1.16;
@@ -13,5 +12,14 @@ label {
   @media screen and (max-width: 480px) {
     margin-right: 0px;
     margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 5px;
   }
 }

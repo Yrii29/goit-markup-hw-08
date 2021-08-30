@@ -12,6 +12,10 @@
 .button__list {
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    justify-content: flex-start;
+  }
 }
 
 .button__items:not(:last-child) {
