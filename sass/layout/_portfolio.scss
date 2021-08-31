@@ -15,12 +15,25 @@
   @media screen and (max-width: 480px) {
     display: block;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-left: -15px;
+    margin-bottom: -15px;
+  }
 }
 
 .function__items-portfolio {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 27px;
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 27px;
+    margin-bottom: 30px;
+  }
 }
 
 .function__link-portfolio {
