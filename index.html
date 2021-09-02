@@ -240,7 +240,27 @@
 
         <ul class="comando__list">
           <li class="comando__items">
-            <img src="./images/comand.jpg" alt="Игорь Демьяненко" width="270" height="260">
+            <picture>
+              <source
+               srcset="../images/comando/igor-mobile.webp 1x,
+               ../images/comando/igor-mobile@2x.webp 2x"
+
+               media="(min-width:320px)"
+               type="image/webp"
+               />
+
+              <source srcset="./images/comando/igor-mobile.jpg 1x,
+                             ./images/comando/igor-mobile@2x.jpg 2x"
+
+                media="(min-width:320px)"
+                type="image/jpg"
+              />
+               
+            </picture>
+
+
+
+            <!-- <img src="./images/comand.jpg" alt="Игорь Демьяненко" width="270" height="260"> -->
             <div class="social">
               <h3 class="function-name">Игорь Демьяненко</h3>
               <p class="specific__description">Product Designer</p>

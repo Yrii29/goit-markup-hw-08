@@ -322,7 +322,7 @@ label {
 }
 
 .button__filters {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   margin-bottom: 54px;
@@ -333,11 +333,21 @@ label {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .button__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-left: -8px;
+    margin-bottom: -8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button__items {
+    flex-basis: calc(100% / 4 - 8px);
+    margin-left: 8px;
+    margin-bottom: 8px;
   }
 }
 
