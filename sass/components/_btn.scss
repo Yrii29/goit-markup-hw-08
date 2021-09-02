@@ -18,16 +18,15 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    margin-left: -8px;
-    margin-bottom: -8px;
+    margin-left: -15px;
+    margin-top: -8px;
   }
 }
 
 .button__items {
   @media screen and (max-width: 480px) {
-    flex-basis: calc(100% / 4 - 8px);
-    margin-left: 8px;
-    margin-bottom: 8px;
+    margin-left: 15px;
+    margin-top: 8px;
   }
 }
 
