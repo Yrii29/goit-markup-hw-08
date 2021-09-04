@@ -52,7 +52,7 @@
   fill: currentColor;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .customer__list {
     display: flex;
     flex-wrap: wrap;
