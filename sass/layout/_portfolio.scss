@@ -83,6 +83,14 @@
   padding: 20px 24px;
   border: 1px solid var(--fanc-br-color);
   border-top: none;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .function-portfolio {
@@ -105,4 +113,19 @@
 
 address {
   font-style: normal;
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+  }
+}
+
+.pic-portfolio {
+  object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }

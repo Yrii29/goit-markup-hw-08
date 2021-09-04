@@ -10,6 +10,15 @@
   fill: currentColor;
 }
 
+.mobile__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--title-color);
+}
+
 .menu-container {
   position: fixed;
   top: 0;
