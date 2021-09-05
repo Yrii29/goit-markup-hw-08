@@ -331,26 +331,34 @@ label {
 .button__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .button__list {
-    justify-content: flex-start;
-    margin-left: -15px;
-    margin-top: -8px;
+    margin-left: -8px;
+    margin-top: -15px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
+  .button__list {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .button__items {
-    margin-left: 15px;
-    margin-top: 8px;
+    margin-left: 8px;
+    margin-top: 15px;
   }
 }
 
-.button__items:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .button__items:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .button {
@@ -409,6 +417,15 @@ button:focus {
   transform: translateX(100%);
 }
 
+.menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -450,6 +467,12 @@ button:focus {
   font-weight: 500;
   font-size: 34px;
   font-style: normal;
+}
+
+.mobile__soc {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 
 .mobile__item-adres {
@@ -1441,44 +1464,23 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
-  margin: 0 auto 0 auto;
+  margin-top: -30px;
 }
 
-@media screen and (max-width: 767px) {
-  .function__list-portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .function__list-portfolio {
-    margin-left: -15px;
-    margin-bottom: -15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .function__items-portfolio {
-    margin-bottom: 30px;
-  }
+.function__items-portfolio {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .function__items-portfolio {
-    flex-basis: calc(100% / 2 - 15px);
-    margin-left: 15px;
-    margin-bottom: 15px;
+    flex-basis: calc(100% / 2 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .function__items-portfolio {
     flex-basis: calc(100% / 3 - 30px);
-    margin-left: 27px;
-    margin-bottom: 30px;
   }
 }
 

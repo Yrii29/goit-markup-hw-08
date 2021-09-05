@@ -32,6 +32,15 @@
   transform: translateX(100%);
 }
 
+.menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -73,6 +82,11 @@
   font-weight: 500;
   font-size: 34px;
   font-style: normal;
+}
+.mobile__soc {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 
 .mobile__item-adres {
