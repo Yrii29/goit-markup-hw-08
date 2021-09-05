@@ -1166,6 +1166,7 @@ button:focus {
   .footer__box {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -1334,6 +1335,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 60px;
   }
 }
 
@@ -1365,16 +1367,11 @@ button:focus {
 }
 
 @media screen and (max-width: 767px) {
-  .substrides__title--footer {
-    margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .substrides__box--footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
   }
 }
 
