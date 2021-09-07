@@ -51,7 +51,7 @@ li {
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
-  outline: 2px solid red;
+  outline: 2px solid transparent;
 }
 
 @media screen and (min-width: 480px) {
@@ -414,6 +414,8 @@ button:focus {
   padding: 32px;
   background-color: var(--title-color);
   z-index: 999;
+  display: flex;
+  flex-direction: column;
   transform: translateX(100%);
 }
 
@@ -455,10 +457,6 @@ button:focus {
   font-weight: 500;
   font-size: 40px;
   font-style: normal;
-}
-
-.mobile__adres {
-  margin-top: 230px;
 }
 
 .mobile__link-tel {
@@ -529,10 +527,6 @@ button:focus {
   margin-bottom: 0;
 }
 
-.customer__items:not(:last-child) {
-  margin-right: 30px;
-}
-
 .customer__link {
   display: flex;
   align-items: center;
@@ -564,16 +558,16 @@ button:focus {
   .customer__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-top: -15px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
   .customer__items:not(:last-child) {
     margin-right: 0;
   }
   .customer__items {
-    flex-basis: calc(100% / 2 - 15px);
-    margin-left: 15px;
-    margin-top: 15px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
   }
   .customer__link {
     width: 210px;
@@ -632,7 +626,7 @@ button:focus {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid red;
+  outline: 2px solid transparent;
 }
 
 @media screen and (min-width: 480px) {
